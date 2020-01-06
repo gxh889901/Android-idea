@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/desription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="描述"></TextView>
+    <TextView
+        android:id="@+id/descriptionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="描述内容"></TextView>
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="链接"></TextView>
+    <Button
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Demo"></Button>
+    <TextView
+        android:id="@+id/demoContent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Demo Content"></TextView>
+</LinearLayout>

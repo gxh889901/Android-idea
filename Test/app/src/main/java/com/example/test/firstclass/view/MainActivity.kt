@@ -1,27 +1,33 @@
-package com.example.test.test
+package com.example.test.firstclass.view
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.test.test.Model.FirstClassBean
+import com.example.test.firstclass.model.FirstClassBean
+import com.example.test.R
 import com.example.test.test.View.AnonymousInnerActivity
 import com.example.test.test.View.ConcurrentThemeActivity
+import com.example.test.kotlin.lambda.View.LambdaActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.weather_board_view.*
-import kotlin.concurrent.thread
+
 
 class MainActivity: AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val list = mutableListOf<FirstClassBean>()
-        list.add(FirstClassBean("线程同步"){context->
+        list.add(FirstClassBean("线程同步") { context ->
             context?.startActivity(Intent(context, ConcurrentThemeActivity::class.java))
         })
-        list.add(FirstClassBean("匿名内部类"){ context:Context->
+        list.add(FirstClassBean("匿名内部类") { context: Context ->
             context?.startActivity(Intent(context, AnonymousInnerActivity::class.java))
+        })
+
+        list.add(FirstClassBean("Lambda表达式") {
+            it?.startActivity(Intent(it, LambdaActivity::class.java))
         })
 
         mainPageBoard.updateList(list)

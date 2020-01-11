@@ -1,17 +1,16 @@
-package com.example.test.test.View
+package com.example.test.firstclass.view
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.test.test.Model.FirstClassBean
-import com.example.test.test.R
+import com.example.test.firstclass.model.FirstClassBean
+import com.example.test.R
 
 
-class BoardAdapter(val list:MutableList<FirstClassBean> = mutableListOf()) :RecyclerView.Adapter<BoardViewHolder>(){
+class BoardAdapter(private val list:MutableList<FirstClassBean> = mutableListOf()) :RecyclerView.Adapter<BoardViewHolder>(){
     var  context:Context? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BoardViewHolder {
         //如果root 参数是 null和parent布局显示样式不一样, 如果root不为空inflate的View的param就是root的param限制

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.test.test">
+    package="com.example.test">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".firstclass.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.ConcurrentThemeActivity"></activity>
-        <activity android:name=".View.AnonymousInnerActivity"></activity>
-        <activity android:name=".View.LambdaActivity"></activity>
+        <activity android:name=".test.View.AnonymousInnerActivity"></activity>
+        <activity android:name=".test.View.ConcurrentThemeActivity"></activity>
+        <activity android:name=".kotlin.lambda.View.LambdaActivity"></activity>
     </application>
 
 </manifest>

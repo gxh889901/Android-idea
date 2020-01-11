@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FirstClass.View.MainActivity">
 
-    <com.example.test.test.View.BoardView
+    <com.example.test.firstclass.view.BoardView
         android:id="@+id/mainPageBoard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

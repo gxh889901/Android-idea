@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.test.test.R;
+import com.example.test.R;
 
 public class ConcurrentThemeActivity extends AppCompatActivity {
     @Override

@@ -1,22 +1,15 @@
 package com.example.test.javalib.Collections;
 
-import java.lang.reflect.Array;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.EnumSet;
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.TreeSet;
-import java.util.function.IntConsumer;
-import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
